@@ -6,6 +6,18 @@ it determines the accessblity of varible with in the javascript
 
 Variables declared in the global scope are accessible throughout the entire JavaScript program, from any part of your code.
 
+```
+var globalVariable = "I'm a global variable";
+
+function accessGlobal() {
+    console.log(globalVariable); // Accessible inside functions
+}
+
+accessGlobal(); // Output: "I'm a global variable"
+console.log(globalVariable); // Output: "I'm a global variable" (accessible globally)
+
+```
+
 ## Function Scope:
 
 Variables declared within a function are only accessible within that function. They are not visible outside of the function.
