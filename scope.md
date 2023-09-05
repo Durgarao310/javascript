@@ -22,6 +22,18 @@ console.log(globalVariable); // Output: "I'm a global variable" (accessible glob
 
 Variables declared within a function are only accessible within that function. They are not visible outside of the function.
 
+```
+function functionScopeExample() {
+    var localVar = "I'm a local variable";
+
+    console.log(localVar); // Accessible within the function
+}
+
+functionScopeExample(); // Output: "I'm a local variable"
+// console.log(localVar); // This would result in an error because localVar is not accessible outside the function
+
+```
+
 ## Block Scope (introduced with let and const in ES6):
 
 Variables declared with let and const are block-scoped, meaning they are only accessible within the block (a set of curly braces) in which they are defined.
